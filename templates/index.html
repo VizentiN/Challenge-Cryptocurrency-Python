@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Address</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="/select-coin">
+        <div class="wallet">
+            <select name="coin" class="coin-select visually-hidden">
+                <option value="btc">Bitcoin</option>
+                <option value="eth">Ethereum</option>
+                <option value="ltc">Litecoin</option>
+                <option value="doge">Dogecoin</option>
+            </select>
+            <button type="submit" class="generate-btn">Generate Address</button>
+        </div>
+        <br>
+        <button><a md-0 href="/addresses">List Address</a></button>
+        <button><a href="/addresses/<int:id>">Retrieve Address</a></button>
+
+    </form>
+</body>
+
+</html>
